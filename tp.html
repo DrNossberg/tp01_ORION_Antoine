@@ -1,0 +1,72 @@
+ <!DOCTYPE html>
+  <html>
+    <head>
+      <meta charset="utf-8">
+      <title>TP 01</title>
+
+      <!--Import bootswatch.css-->
+      <link rel="stylesheet" href="https://bootswatch.com/5/darkly/bootstrap.min.css">
+      <link rel="stylesheet" href="./tp.css">
+
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+
+    <body class="container w-50">
+      <form>
+        <fieldset>
+          <legend>TP 01</legend>
+          <div class="form-group">
+            <label for="nomUserForm" class="form-label mt-4">Nom</label>
+            <input type="text" class="form-control" id="nomUserForm" placeholder="Martin" required>
+          </div>
+          <div class="form-group">
+            <label for="prenomUserForm" class="form-label mt-4">Prénom</label>
+            <input type="text" class="form-control" id="prenomUserForm" placeholder="Marie">
+          </div>
+          <div class="form-group">
+            <label for="exampleInputEmail1" class="form-label mt-4">Adress mail</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="xyz@mailchaud.fr" required>
+            <small id="emailHelp" class="form-text text-muted">Cet email ne sera pas partagé</small>
+          </div>
+          <div class="form-group">
+            <label for="exampleInputPassword1" class="form-label mt-4">Mot de passe</label>
+            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" required>
+            <small id="passwordHelp" class="form-text text-muted">Doit contenire : lettres, chiffres et caractères spéciaux</small>
+          </div>
+
+        </fieldset>
+        <fieldset class="form-group">
+          <legend class="mt-4">Genre</legend>
+
+          <div class="form-check mx-5">
+            <input class="form-check-input" name="a" type="radio" value="" id="genreChoice1">
+            <label class="form-check-label" for="genreChoice1">Homme</label>
+          </div>
+          <div class="form-check mx-5">
+            <input class="form-check-input" name="a" type="radio" value="" id="genreChoice2">
+            <label class="form-check-label" for="genreChoice2">Femme</label>
+          </div>
+          <div class="form-check mx-5">
+            <input class="form-check-input" name="a" type="radio" value="" id="genreChoice3">
+            <label class="form-check-label" for="genreChoice3">Autre</label>
+          </div>
+        </fieldset>
+
+        <div class="form-group">
+            <label for="codePostal" class="form-label mt-4">Code Postal</label>
+            <input type="text" class="form-control" id="codePostal" placeholder="69240" required pattern="[0-9]{5}">
+        </div>
+
+        <div class="form-group">
+            <label for="VilleNom" class="form-label mt-4">Ville</label>
+            <input type="text" class="form-control" id="VilleNom" placeholder="Thizy" required pattern="[A-z]+">
+        </div>
+
+        <div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </div>
+      </fieldset>
+    </form>
+
+    </body>
+  </html>
